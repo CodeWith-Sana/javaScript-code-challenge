@@ -33,7 +33,7 @@
 // }
 
 
-const num = [9 ,14 ,3, 4,10 ,6,]
+// const num = [9 ,14 ,3, 4,10 ,6,]
 // let r =  num.shift()  //retruns frist array ele and remove it from the array
 // console.log(r)
 // let x =  num.unshift(23)
@@ -45,7 +45,26 @@ const num = [9 ,14 ,3, 4,10 ,6,]
 // console.log(r)
 // console.log(num)
 // console.log(num.sort((a,b)=>(a-b)));
-let deleted =  num.splice(3 , 2, 100 , 200)
-console.log(deleted , num)
-let newarr =  num.slice(2,5)
-console.log(newarr , num)
+// let deleted =  num.splice(3 , 2, 100 , 200)
+// console.log(deleted , num)
+// let newarr =  num.slice(2,5)
+// console.log(newarr , num)
+
+let abc = [1,4,10,4,20,5]
+console.log(abc)
+let arr1 = abc.map(square)
+console.log(arr1)
+function square(value){
+    return value*value
+}
+let arr2 =  abc.filter(even)
+console.log(arr2)
+function even(value){
+    return value % 2 === 0
+}
+let arr3 =   abc.reduce(add)
+console.log(arr3)
+function add(h1 , h2){
+    // console.log(h1+ h2)
+    return h1+h2
+}
