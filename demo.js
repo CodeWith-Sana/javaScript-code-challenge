@@ -31,3 +31,21 @@
 // } else {
 //     alert("Hello " + name + ", you are a minor.");
 // }
+
+
+const num = [9 ,14 ,3, 4,10 ,6,]
+// let r =  num.shift()  //retruns frist array ele and remove it from the array
+// console.log(r)
+// let x =  num.unshift(23)
+// console.log(x , num)
+// console.log(typeof num)
+// delete num[0]            //delete will remove the value at indx but leaft ahole at that place undefined.
+// console.log(num.length , num)
+// let r =  num.sort()
+// console.log(r)
+// console.log(num)
+// console.log(num.sort((a,b)=>(a-b)));
+let deleted =  num.splice(3 , 2, 100 , 200)
+console.log(deleted , num)
+let newarr =  num.slice(2,5)
+console.log(newarr , num)
